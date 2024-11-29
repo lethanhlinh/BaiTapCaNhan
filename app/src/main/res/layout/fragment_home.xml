@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f9fafb"
+    tools:context=".Fragment.HomeFragment">
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, Alex!"
+        android:textSize="22sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Số task hôm nay -->
+    <TextView
+        android:id="@+id/tvTaskToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You've got 5 tasks today 📅"
+        android:layout_below="@id/tvGreeting"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Hộp tìm kiếm -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search something..."
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/tvTaskToday"
+        android:layout_marginBottom="16dp" />
+
+
+
+</RelativeLayout>
+
+
+
